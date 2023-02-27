@@ -6,9 +6,9 @@ BOR_DIR=${BOR_DIR:-~/.bor}
 DATA_DIR=$BOR_DIR/data
 
 bor --datadir $DATA_DIR \
-  --port 30303 \
   --http --http.addr '0.0.0.0' \
-  --http.vhosts '*' \
+  --ws --ws.addr ''
+  --http.vhosts '0.0.0.0' \
   --http.corsdomain '*' \
   --http.port 8545 \
   --ipcpath $DATA_DIR/bor.ipc \
