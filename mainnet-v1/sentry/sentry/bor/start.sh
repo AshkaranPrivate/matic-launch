@@ -6,6 +6,7 @@ BOR_DIR=${BOR_DIR:-~/.bor}
 DATA_DIR=$BOR_DIR/data
 
 bor --datadir $DATA_DIR \
+  --snapshot false \
   --http --http.addr '0.0.0.0' \
   --http.vhosts '*' \
   --http.corsdomain '*' \
