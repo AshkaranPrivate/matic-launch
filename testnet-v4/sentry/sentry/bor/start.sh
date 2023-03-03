@@ -6,7 +6,7 @@ BOR_DIR=${BOR_DIR:-~/.bor}
 DATA_DIR=$BOR_DIR/data
 
 bor --datadir $DATA_DIR \
-  --snapshot false \
+   --port 30303 \
   --http --http.addr '0.0.0.0' \
   --ws --ws.addr '0.0.0.0' \
   --http.vhosts '0.0.0.0' \
